@@ -13,7 +13,7 @@ def home():
 	return render_template('home.html')
 
 @app.route('/Predict',methods=['POST'])
-def predict():
+def Predict():
 	df= pd.read_csv("spam.csv", encoding="latin-1")
 	# Features and Labels
 	df['label'] = df['class'].map({'ham': 0, 'spam': 1})
