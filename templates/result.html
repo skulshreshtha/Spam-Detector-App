@@ -22,10 +22,10 @@
 		
 	{% if prediction == 1%}
 	<img src="../static/spam.jpg" alt="Spam alert" class="center">
-	<h2 style="color:red;text-align:center;">Your message is potentially Spam!</h2>
+	<h2 style="color:red;">Your message is potentially Spam!</h2>
 	{% elif prediction == 0%}
 	<img src='../static/ham.jpg' alt='ham cartoon image' class="center">
-	<h2 style="color:green;text-align:center;">Not a Spam (It is a Ham)</h2>
+	<h2 style="color:green;">Not a Spam (It is a Ham)</h2>
 	{% endif %}
 
 	</div>
